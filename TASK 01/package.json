@@ -1,21 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "task-01",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
-}
-=======
   "name": "task01-node-app",
   "version": "1.0.0",
   "description": "Node.js app for CI/CD with GitHub Actions",
@@ -27,5 +10,3 @@
     "express": "^4.18.2"
   }
 }
-
->>>>>>> 2b8567b384a15e2ab85934fb61d88b1c19d0d077
