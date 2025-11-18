@@ -17,3 +17,4 @@ Pipeline should:
 # trigger pipeline
 trigger
 trigger
+trigger
