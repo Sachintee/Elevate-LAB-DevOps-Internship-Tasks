@@ -16,3 +16,4 @@ Pipeline should:
 3. Push image to DockerHub automatically
 # trigger pipeline
 trigger
+trigger
