@@ -19,11 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: TASK\ 01
+        working-directory: ./TASK 01
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-task01 .
-        working-directory: TASK\ 01
+        working-directory: ./TASK 01
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
