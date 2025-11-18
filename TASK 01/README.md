@@ -15,3 +15,4 @@ Pipeline should:
 2. Create Docker image
 3. Push image to DockerHub automatically
 # trigger pipeline
+trigger
