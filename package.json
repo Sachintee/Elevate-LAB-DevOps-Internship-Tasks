@@ -1,21 +1,8 @@
 {
-  "name": "elevate-lab-devops-internship-tasks",
+  "name": "task02",
   "version": "1.0.0",
-  "description": "Create a Jenkins CI/CD pipeline that automatically builds and deploys an application.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sachintee/Elevate-LAB-DevOps-Internship-Tasks.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Sachintee/Elevate-LAB-DevOps-Internship-Tasks/issues"
-  },
-  "homepage": "https://github.com/Sachintee/Elevate-LAB-DevOps-Internship-Tasks#readme"
+    "test": "echo \"No tests specified\" && exit 0"
+  }
 }
