@@ -1,0 +1,13 @@
+{
+  "name": "task03-example",
+  "version": "1.0.0",
+  "description": "Example task folder structure",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["devops", "example", "template"],
+  "author": "",
+  "license": "ISC"
+}
