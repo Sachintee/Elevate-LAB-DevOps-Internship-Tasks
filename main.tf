@@ -9,15 +9,18 @@ terraform {
   }
 }
 
+# Use Windows Docker socket
 provider "docker" {
-  host = "npipe:////./pipe/docker_engine"  # Windows-specific socket
+  host = "npipe:////./pipe/docker_engine"  # This is for Windows
 }
 
+# Pull the Docker image
 resource "docker_image" "nginx" {
   name         = "nginx:latest"
   keep_locally = false
 }
 
+# Create a Docker container
 resource "docker_container" "nginx_container" {
   name  = "nginx-terraform"
   image = docker_image.nginx.image_id
@@ -26,4 +29,6 @@ resource "docker_container" "nginx_container" {
     internal = 80
     external = 8080
   }
+  
+  restart = "unless-stopped"
 }
