@@ -14,7 +14,7 @@ resource "docker_image" "nginx_image" {
 }
 
 resource "docker_container" "nginx_container" {
-  name  = "nginx-demo"
+  name  = "nginx-container"
   image = docker_image.nginx_image.name
 
   ports {
