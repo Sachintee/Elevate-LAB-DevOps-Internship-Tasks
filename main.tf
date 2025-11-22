@@ -1,34 +1,23 @@
-# main.tf
-
 terraform {
   required_providers {
     docker = {
       source  = "kreuzwerker/docker"
-      version = "~> 3.0"
+      version = "~> 3.0.2"
     }
   }
 }
 
-# Use Windows Docker socket
-provider "docker" {
-  host = "npipe:////./pipe/docker_engine"  # This is for Windows
+provider "docker" {}
+
+resource "docker_image" "nginx_image" {
+  name = "nginx:latest"
 }
 
-# Pull the Docker image
-resource "docker_image" "nginx" {
-  name         = "nginx:latest"
-  keep_locally = false
-}
-
-# Create a Docker container
 resource "docker_container" "nginx_container" {
-  name  = "nginx-terraform"
-  image = docker_image.nginx.image_id
-  
+  name  = "my-nginx-container"
+  image = docker_image.nginx_image.name
   ports {
     internal = 80
     external = 8080
   }
-  
-  restart = "unless-stopped"
 }
